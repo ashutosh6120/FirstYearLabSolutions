@@ -11,22 +11,22 @@ int main()
 	scanf("%d", &n);
 	if(n > max)
 	{
-		printf("elements exceed maxsize of %d\n", max);
-		exit(0);
+	   printf("elements exceed maxsize of %d\n", max);
+	   exit(0);
 	}
 	printf("Enter the elements\n");
 	for(i = 0; i < n; i++)
-		scanf("%d", &arr[i]);
+	  scanf("%d", &arr[i]);
 	printf("Enter the element to search: ");
 		scanf("%d", &key);
 	for(i = 0; i < n; i++)
-		if(key == arr[i])
-		{
-			flag= 1;
-			printf("%d found at pos %d\n", key, i+1);
-			break;
-		}
-		if(!flag)
-			printf("%d not found\n", key);
+	    if(key == arr[i])
+	    {
+		flag= 1;
+		printf("%d found at pos %d\n", key, i+1);
+		break;
+	    }
+	    if(!flag)
+		printf("%d not found\n", key);
 	return 0;
 }
